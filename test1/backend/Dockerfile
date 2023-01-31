@@ -7,4 +7,4 @@ COPY ./ ./
 
 RUN gradle clean build --no-daemon
 
-CMD ["java", "-jar", "./build/libs/easssue-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "./build/libs/easssue-0.0.1-SNAPSHOT.jar"]
